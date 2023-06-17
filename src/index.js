@@ -29,7 +29,7 @@ function make(tagName, classNames = null, attributes = {}) {
  *
  * @returns {boolean}
  */
-export function hasClass(el, className) {
+function hasClass(el, className) {
   return el.classList.contains(className);
 }
 
@@ -39,7 +39,7 @@ export function hasClass(el, className) {
  *
  * @returns {void}
  */
-export function addClass(el, className) {
+function addClass(el, className) {
   return el.classList.add(className);
 }
 
@@ -49,8 +49,19 @@ export function addClass(el, className) {
  *
  * @returns {void}
  */
-export function removeClass(el, className) {
+function removeClass(el, className) {
   return el.classList.remove(className);
 }
 
-module.exports = { make, hasClass, addClass, removeClass };
+/**
+ * @param  {HTMLElement} el
+ * @param  {string} className
+ * @param  {boolean} force
+ *
+ * @returns {boolean}
+ */
+function toggleClass(el, className, force) {
+  return el.classList.toggle(className, force);
+}
+
+module.exports = { make, hasClass, addClass, removeClass, toggleClass };
