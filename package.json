@@ -1,0 +1,19 @@
+{
+  "name": "@lesniakcorp/dom-helpers",
+  "version": "0.2.0",
+  "description": "Little DOM helpers",
+  "main": "./src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesniakcorp/dom-helpers.git"
+  },
+  "author": {
+    "name": "Lesniak Corp",
+    "email": "mathieu@lesniak.fr"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lesniakcorp/dom-helpers/issues"
+  },
+  "homepage": "https://github.com/lesniakcorp/dom-helpers#readme"
+}
